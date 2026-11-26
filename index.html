@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>D'vonne Hmielewski: computer science, ML and security</title>
+  <meta name="description" content="D'vonne Hmielewski: computer science student at UTSA building machine-learning systems for security and markets, and founder of D&M Window Washing.">
+  <meta property="og:title" content="D'vonne Hmielewski">
+  <meta property="og:description" content="Machine-learning systems for security and markets. UTSA Computer Science, Class of 2027.">
+  <meta property="og:image" content="assets/stockr-backtest.webp">
+  <meta name="theme-color" content="#13233A">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@500;600&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <a class="wordmark" href="#top">D'vonne Hmielewski</a>
+    <nav aria-label="Sections">
+      <ul>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#leadership">Leadership</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero-text">
+        <img class="headshot" src="assets/headshot.webp" width="160" height="160" alt="D'vonne Hmielewski">
+        <h1 id="hero-title">I build machine-learning systems that have to be right for the right reasons.</h1>
+        <p class="lede">Computer science at UTSA, minor in economics, graduating May 2027.
+          Last summer I built an access-decision engine at American Express that saves
+          $3M+ a year. I also run a $500K home-services company.</p>
+        <p class="actions">
+          <a class="button primary" href="assets/Dvonne_Hmielewski_Resume.pdf" download>Download resume</a>
+          <a class="button" href="https://github.com/dvonnehmielewski">GitHub</a>
+          <a class="button" href="https://www.linkedin.com/in/d%E2%80%99vonne-hmielewski-2230b3289">LinkedIn</a>
+        </p>
+      </div>
+
+      <figure class="hero-chart" aria-labelledby="chart-caption">
+        <div class="chart" id="vol-chart" role="img"
+             aria-label="Line chart, 2005 to 2022: forecast S&P 500 volatility closely tracks realized volatility, including the 2008 and 2020 spikes."></div>
+        <figcaption id="chart-caption">
+          <span class="key key-f">My forecast</span> of S&amp;P&nbsp;500 volatility over the next month,
+          made each day without seeing the future, against <span class="key key-r">what actually happened</span>.
+          2005–2022, from <a href="#stockr">Stockr</a>.
+          <output class="readout" id="chart-readout" aria-live="polite"></output>
+        </figcaption>
+      </figure>
+    </section>
+
+    <section id="work" aria-labelledby="work-title">
+      <h2 id="work-title">Work and research</h2>
+
+      <article class="entry">
+        <p class="when">Summer 2026</p>
+        <div class="body">
+          <h3>Information Security Intern, American Express</h3>
+          <p>Built an identity-access governance engine that decides access requests on its own:
+            a rules engine plus a 3-class XGBoost/logistic model (allow, temporary allow, deny).
+            High-confidence requests are decided automatically; uncertain ones go to a person.
+            Time-based splits, calibration and SHAP explanations make every decision auditable.</p>
+        </div>
+        <p class="figure"><strong>$3M+</strong> saved per year</p>
+      </article>
+
+      <article class="entry">
+        <p class="when">2025–2026</p>
+        <div class="body">
+          <h3>Undergraduate Researcher, Station1 (MIT-affiliated)</h3>
+          <p>Added a data-center sector to the GCAM v8.2 integrated assessment model to see how
+            AI growth reshapes U.S. electricity, water and emissions through 2100. Where a data
+            center is built, and what powers its grid, matters more than how it is cooled.
+            <a href="https://docs.google.com/document/u/0/d/1mOdTqnv5eEFsors4NCdfLHenV-GqMltWj0qclYru8qg/edit">Read the paper</a></p>
+        </div>
+        <p class="figure"><strong>12×</strong> building gas use vs. baseline by 2100</p>
+      </article>
+
+      <article class="entry">
+        <p class="when">2023–now</p>
+        <div class="body">
+          <h3>Founder, D&amp;M Window Washing</h3>
+          <p>Started with door-to-door sales in Houston and grew to four cities with a team.
+            I wrote a Python tool on our job history that flags customers due for repeat service.
+            <a href="https://www.dmwindowwashing.com">dmwindowwashing.com</a></p>
+        </div>
+        <p class="figure"><strong>$500K+</strong> revenue</p>
+      </article>
+
+      <article class="entry">
+        <p class="when">Summers 2023–25</p>
+        <div class="body">
+          <h3>Project Manager Intern, Kendall Homes</h3>
+          <p>Coordinated 20 trade teams across $10M+ in residential construction, owning schedule,
+            quality control, budget and risk.</p>
+        </div>
+        <p class="figure"><strong>+20%</strong> home production</p>
+      </article>
+    </section>
+
+    <section id="projects" aria-labelledby="projects-title">
+      <h2 id="projects-title">Projects</h2>
+
+      <article class="entry feature" id="stockr">
+        <p class="when">2025–2026</p>
+        <div class="body">
+          <h3>Stockr</h3>
+          <p>A research pipeline that asks whether machine learning can predict the S&amp;P&nbsp;500,
+            and answers honestly. Nine models, retrained every six months on data they could
+            have known at the time, tested with block-bootstrap and Diebold-Mariano statistics.</p>
+          <p>The finding: next-week direction is a coin flip for every model I tried, but volatility
+            is forecastable. Sizing positions to the forecast cut the worst drawdown from 57% to
+            42% with similar returns.</p>
+          <img class="shot" src="assets/stockr-backtest.webp" width="1400" height="630" loading="lazy"
+               alt="Growth of $1 from 2005 to 2022 for buy and hold, a direction signal, volatility targeting, and volatility targeting with a direction tilt. Volatility targeting finishes highest with shallower drawdowns.">
+          <p class="links"><a href="https://github.com/dvonnehmielewski/stockr">Code and full report on GitHub</a></p>
+          <p class="stack">Python, XGBoost, scikit-learn, SHAP, pandas, GitHub Actions</p>
+        </div>
+        <p class="figure"><strong>−15 pts</strong> max drawdown <span>(57% → 42%)</span></p>
+      </article>
+
+      <article class="entry">
+        <p class="when">Spring 2025</p>
+        <div class="body">
+          <h3>Rowdy Experience</h3>
+          <p>An Android app, built with three classmates, that turns UTSA campus life into
+            50 challenges across food, buildings, sports, nightlife and activities, with
+            badges that level up as you finish each list.</p>
+          <p class="links"><a href="https://github.com/UTSA-CS-3443/Rowdy-Experience">Code on GitHub</a></p>
+          <p class="stack">Java, Android Studio</p>
+        </div>
+        <p class="figure"><strong>50</strong> challenges, 5 categories</p>
+      </article>
+
+      <article class="entry">
+        <p class="when">2024–2026</p>
+        <div class="body">
+          <h3>This site</h3>
+          <p>Hand-written HTML, CSS and JavaScript with no framework. The chart at the top is
+            drawn from Stockr's actual out-of-sample output.</p>
+          <p class="links"><a href="https://github.com/dvonnehmielewski/Portfolio">Code on GitHub</a></p>
+        </div>
+      </article>
+    </section>
+
+    <section id="leadership" aria-labelledby="leadership-title">
+      <h2 id="leadership-title">Leadership</h2>
+
+      <article class="entry">
+        <p class="when">2025–now</p>
+        <div class="body">
+          <h3>President, Phi Gamma Delta</h3>
+          <p>Lead a chapter of 90+ members across operations, budget, recruitment and risk.
+            Introduced SMART-goal plans for every chairman, reviewed weekly.</p>
+        </div>
+        <p class="figure"><strong>+40%</strong> recruitment</p>
+      </article>
+
+      <article class="entry">
+        <p class="when">2026</p>
+        <div class="body">
+          <h3>Future Texas Business Legend Scholar</h3>
+          <p>Selected by the Texas Business Hall of Fame Foundation for entrepreneurship,
+            leadership and academics. Also a Texas Terry full-ride scholar, 3.95 GPA.</p>
+        </div>
+      </article>
+    </section>
+
+    <section id="skills" aria-labelledby="skills-title">
+      <h2 id="skills-title">Tools I use</h2>
+      <dl class="skills">
+        <dt>Languages</dt><dd>Python, SQL, C, Java, HTML/CSS/JavaScript</dd>
+        <dt>ML and data</dt><dd>XGBoost, scikit-learn, SHAP, pandas, NumPy, Power BI, GCAM</dd>
+        <dt>Infrastructure</dt><dd>Docker, Kubernetes, Git, GitHub Actions, Android Studio</dd>
+        <dt>Certifications</dt><dd>CompTIA Security+, CCNA</dd>
+      </dl>
+    </section>
+
+    <section id="contact" class="contact" aria-labelledby="contact-title">
+      <h2 id="contact-title">Get in touch</h2>
+      <p>Email is the fastest way to reach me.</p>
+      <p class="email"><a href="mailto:dvonnehmielewski@gmail.com">dvonnehmielewski@gmail.com</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 D'vonne Hmielewski, San Antonio, Texas</p>
+  </footer>
+
+  <script src="main.js" defer></script>
+</body>
+</html>
