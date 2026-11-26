@@ -47,11 +47,11 @@
 
       <figure class="hero-chart" aria-labelledby="chart-caption">
         <div class="chart" id="vol-chart" role="img"
-             aria-label="Line chart, 2005 to 2022: forecast S&P 500 volatility closely tracks realized volatility, including the 2008 and 2020 spikes."></div>
+             aria-label="Line chart, 2005 to 2026: forecast S&P 500 volatility closely tracks realized volatility, including the 2008 and 2020 spikes."></div>
         <figcaption id="chart-caption">
           <span class="key key-f">My forecast</span> of S&amp;P&nbsp;500 volatility over the next month,
           made each day without seeing the future, against <span class="key key-r">what actually happened</span>.
-          2005–2022, from <a href="#stockr">Stockr</a>.
+          2005–2026, from <a href="#stockr">Stockr</a>.
           <output class="readout" id="chart-readout" aria-live="polite"></output>
         </figcaption>
       </figure>
@@ -118,9 +118,9 @@
             have known at the time, tested with block-bootstrap and Diebold-Mariano statistics.</p>
           <p>The finding: next-week direction is a coin flip for every model I tried, but volatility
             is forecastable. Sizing positions to the forecast cut the worst drawdown from 57% to
-            42% with similar returns.</p>
+            42% and slightly raised returns.</p>
           <img class="shot" src="assets/stockr-backtest.webp" width="1400" height="630" loading="lazy"
-               alt="Growth of $1 from 2005 to 2022 for buy and hold, a direction signal, volatility targeting, and volatility targeting with a direction tilt. Volatility targeting finishes highest with shallower drawdowns.">
+               alt="Growth of $1 from 2005 to 2026 for buy and hold, a direction signal, volatility targeting, and volatility targeting with a direction tilt. Volatility targeting finishes highest with shallower drawdowns.">
           <p class="links"><a href="https://github.com/dvonnehmielewski/stockr">Code and full report on GitHub</a></p>
           <p class="stack">Python, XGBoost, scikit-learn, SHAP, pandas, GitHub Actions</p>
         </div>
